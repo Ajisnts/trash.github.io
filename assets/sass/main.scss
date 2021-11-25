@@ -1,0 +1,150 @@
+// variable declarations sass
+$primary-color: #0f393b;
+$secondary-color: #ea7f4a;
+$tertiary-color: #edcb50;
+$primary-text: #f6f5ef;
+$warning: #ffe872;
+$success: #bffbbe;
+$danger: #fc7b9a;
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $primary-text;
+  background-color: $primary-text;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: inherit;
+      opacity: 0.8;
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 0.4em;
+    display: block;
+    background-color: $primary-text;
+    border: none;
+    outline: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $primary-color;
+    display: block;
+  }
+}
+
+.btn-primary {
+  background-color: $primary-text;
+  color: $primary-color;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 0.5em;
+  &:hover {
+    background-color: $primary-text;
+    color: $primary-color;
+  }
+}
+
+.btn-secondary {
+  background-color: $primary-color;
+  color: $primary-text;
+  border: none;
+  border-radius: 0.5em;
+  &:hover {
+    background-color: $primary-color;
+    color: $primary-text;
+  }
+}
+
+.modal {
+  color: $primary-color;
+}
+
+// navbar start
+.navbar {
+  background-color: $primary-color;
+  .navbar-brand {
+    img {
+      width: 4em;
+      height: 2em;
+    }
+  }
+}
+//navbar end
+
+// home start
+.home {
+  background-color: $primary-color;
+  height: 45.6em;
+  .row {
+    height: 45em;
+    width: 100%;
+    img {
+      min-width: auto;
+      width: 100%;
+    }
+    mark {
+      background-color: $tertiary-color;
+    }
+  }
+}
+// home end
+
+// category start
+.category {
+  background-color: $primary-text;
+  color: $primary-color;
+  margin-top: -4em;
+  .col-sm-3 {
+    img {
+      width: 9em;
+    }
+    .circle {
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 100%;
+    }
+  }
+}
+// category end
+
+// footer start
+.footer {
+  background-color: $primary-color;
+}
+// footer end
+
+// main start
+.main {
+  .col-sm-6 {
+    img {
+      width: 15em;
+    }
+    h1 {
+      font-size: 5em;
+    }
+    .circle {
+      width: 14em;
+      height: 1em;
+      border-radius: 1em;
+    }
+  }
+  .col-12 {
+    img {
+      width: 3em;
+      padding: 0.3em;
+      border-radius: 1em;
+    }
+  }
+}
+// main end
+
+@media screen and (max-width: 768px) {
+  .home {
+    h1 {
+      text-align: center;
+    }
+  }
+}

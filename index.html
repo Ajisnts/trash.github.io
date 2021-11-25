@@ -1,57 +1,139 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-    <meta name="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<html>
+  <head>
+    <meta name="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
     <title>Trash Education Web</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-    <!-- Favicon -->
-    <link href="assets/img/welcome_logo.png" rel="icon">
+    <!-- Favicon Website -->
+    <link href="./assets/img/logo.png" alt="logo" rel="icon" />
 
-    <!-- Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/popper.js"></script>
+    <!-- CSS Style -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
 
-    <!-- Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/style.js"></script>
+    <!-- JS Style -->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
-    <!-- ======================================================
-    * Template Name: Trash Education Web - v1
-    * Author : Aji Santoso
-    * Class : Teknik Informatika 2 B
-    ===========================================================-->
-</head>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-<body class="welcome-body">
-    <div class="container" style="margin-top: 15%">
-        <div class="row">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-            <div class="col-sm-6 text-center">
-                <div class="welcome-quotes">
-                    <h5>Hijau dan Bersih</h5>
-                    <h5>bukan hanya sebuah</h5>
-                    <h5><strong class="rounded" style="background-color: #FFC187;">aspirasi</strong> tetapi sebuah <strong class="rounded" style="border: 2px solid #FFC167">tindakan</strong></h5>
-                </div>
-                <a href="home_page.html" class="btn welcome-btn">Klik</a>
-            </div>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-            <div class="col-sm-6 text-center">
-                <img class="welcome-logo" src="assets/img/user_logo.png">
-            </div>
-
+    <script>
+      AOS.init();
+    </script>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <div class="navbar-brand" data-aos="fade-down">
+            <img src="./assets/img/logo.png" alt="navbar-brand" />
+          </div>
         </div>
+      </nav>
+    </header>
+    <!-- navbar end -->
+    <!-- home start -->
+    <section class="home">
+      <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-sm-6 text-center" data-aos="fade-up">
+            <img src="./assets/img/nature.svg" alt="home" />
+          </div>
+          <div class="col-sm-6" data-aos="fade-up">
+            <h1><strong>Hijau</strong> dan <strong>Bersih</strong> bukan hanya sebuah <mark class="p-0">aspirasi</mark> tetapi sebuah tindakan</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home end -->
+    <!-- category start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#0f393b"
+        fill-opacity="1"
+        d="M0,32L48,42.7C96,53,192,75,288,96C384,117,480,139,576,128C672,117,768,75,864,90.7C960,107,1056,181,1152,192C1248,203,1344,149,1392,122.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+    <section class="category">
+      <div class="container">
+        <h3 class="p-4 fw-bold" data-aos="fade-right">Jenis Sampah</h3>
+        <div class="row justify-content-center p-2 mb-5">
+          <div class="col-sm-3 text-center" data-aos="fade-up">
+            <a href="./organik.html">
+              <img src="./assets/img/trash.png" alt="trash" />
+              <div class="circle mx-auto mt-2 mb-2" style="background-color: #bffbbe"></div>
+              <h3 class="fw-bold">Organik</h3>
+              <p class="fs-4">Mudah Terurai</p>
+            </a>
+          </div>
+          <div class="col-sm-3 text-center" data-aos="fade-up">
+            <a href="./anorganik.html">
+              <img src="./assets/img/trash.png" alt="trash" />
+              <div class="circle mx-auto mt-2 mb-2" style="background-color: #ffe872"></div>
+              <h3 class="fw-bold">Anorganik</h3>
+              <p class="fs-4">Sulit Terurai</p>
+            </a>
+          </div>
+          <div class="col-sm-3 text-center" data-aos="fade-up">
+            <a href="./b3.html">
+              <img src="./assets/img/trash.png" alt="trash" />
+              <div class="circle mx-auto mt-2 mb-2" style="background-color: #fc7b9a"></div>
+              <h3 class="fw-bold">B3</h3>
+              <p class="fs-4">Berbahaya</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category end -->
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="text-center p-2">
+        Made with
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+        </svg>
+        by <a href="#" data-bs-toggle="modal" data-bs-target="#me">me</a>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- modal start -->
+    <div id="me" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <img src="./assets/img/profile.JPG" alt="me" class="rounded-circle mx-auto" width="100" height="100" />
+          </div>
+          <div class="modal-body text-center">
+            <h5 class="fw-bold">Aji Santoso</h5>
+            <p>Professional Goggle Searcher | Frontend Newbie</p>
+            <a class="btn btn-secondary">OS : Linux</a>
+            <a class="btn btn-secondary">Text Editor : Visual Studio Code</a>
+            <a class="btn btn-secondary mt-2">Code : Html , CSS , Javascript</a>
+            <a type="submit" class="btn btn-secondary mt-2" href="https://github.com/Ajisnts" target="_blank">Github: Ajisnts</a>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <!-- modal end -->
+  </body>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+    AOS.init();
+  </script>
 </html>
